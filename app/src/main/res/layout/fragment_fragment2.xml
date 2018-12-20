@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/s_14_16_18"
+            android:padding="5dip"
+            android:layout_marginLeft="@dimen/s_14_16_18">
+            <TableRow
+                android:id="@+id/sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="left"
+                    android:text="bar_code"
+                    android:textSize="@dimen/s_14_16_18" />
+
+                <EditText
+                    android:id="@+id/etBarCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="bar_code"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/s_14_16_18" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="left"
+                    android:text="notes"
+                    android:textSize="@dimen/s_14_16_18" />
+
+                <EditText
+                    android:id="@+id/etNotes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="notes"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/s_14_16_18" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
